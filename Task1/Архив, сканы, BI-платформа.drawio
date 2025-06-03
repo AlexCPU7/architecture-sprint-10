@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="27.1.3">
+  <diagram name="Страница — 1" id="7NWjCsh1hoOStJ_uVr9g">
+    <mxGraphModel dx="2305" dy="1160" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Og1sMuy6hf8G7lSEmIsD-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Og1sMuy6hf8G7lSEmIsD-1" target="Og1sMuy6hf8G7lSEmIsD-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Og1sMuy6hf8G7lSEmIsD-1" value="Сканы, анализы" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="420" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Og1sMuy6hf8G7lSEmIsD-2" value="BI/ML/AI-платформа&lt;div&gt;(Полная анонимизация, невозможность deanonymize)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="337" y="740" width="206" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Og1sMuy6hf8G7lSEmIsD-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Og1sMuy6hf8G7lSEmIsD-3" target="Og1sMuy6hf8G7lSEmIsD-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Og1sMuy6hf8G7lSEmIsD-3" value="Передача только анонимных и агрегированных данных в BI/AI&lt;div&gt;(маскирование, токенизация)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="660" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Og1sMuy6hf8G7lSEmIsD-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Og1sMuy6hf8G7lSEmIsD-4" target="Og1sMuy6hf8G7lSEmIsD-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Og1sMuy6hf8G7lSEmIsD-4" value="Файловый сервер/БД&lt;div&gt;(ограниченный доступ, аудит обращений, указание PHI/PII тегов)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="580" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Og1sMuy6hf8G7lSEmIsD-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Og1sMuy6hf8G7lSEmIsD-5" target="Og1sMuy6hf8G7lSEmIsD-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Og1sMuy6hf8G7lSEmIsD-5" value="DLP,&lt;div&gt;автотегирование,&lt;/div&gt;&lt;div&gt;шифрование&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="490" width="140" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

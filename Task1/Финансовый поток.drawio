@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="27.1.1">
+  <diagram name="Страница — 1" id="Jn1atrcWPxFbq2PXDgYc">
+    <mxGraphModel dx="2305" dy="1160" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h3ww1egmyFWHATbXAFS7-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h3ww1egmyFWHATbXAFS7-1" target="h3ww1egmyFWHATbXAFS7-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3ww1egmyFWHATbXAFS7-1" value="Пациент" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="360" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h3ww1egmyFWHATbXAFS7-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h3ww1egmyFWHATbXAFS7-2" target="h3ww1egmyFWHATbXAFS7-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3ww1egmyFWHATbXAFS7-2" value="Платёжный шлюз&lt;div&gt;(TLS, SCA, DLP)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="430" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h3ww1egmyFWHATbXAFS7-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h3ww1egmyFWHATbXAFS7-3" target="h3ww1egmyFWHATbXAFS7-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3ww1egmyFWHATbXAFS7-3" value="Платёжная система,&lt;div&gt;токенизация реквизитов&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="315" y="500" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h3ww1egmyFWHATbXAFS7-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h3ww1egmyFWHATbXAFS7-4" target="h3ww1egmyFWHATbXAFS7-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3ww1egmyFWHATbXAFS7-4" value="&amp;nbsp;Бухгалтерия БД&lt;div&gt;(FIN, RBAC)&lt;/div&gt;&lt;div&gt;(Только бухгалтерам и кассирам, доступ по ролям, шифрование)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="570" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h3ww1egmyFWHATbXAFS7-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h3ww1egmyFWHATbXAFS7-5" target="h3ww1egmyFWHATbXAFS7-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3ww1egmyFWHATbXAFS7-5" value="Резервная копия&lt;div&gt;(шифрование, retention-политика)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="670" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h3ww1egmyFWHATbXAFS7-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h3ww1egmyFWHATbXAFS7-6" target="h3ww1egmyFWHATbXAFS7-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3ww1egmyFWHATbXAFS7-6" value="Архив" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="740" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h3ww1egmyFWHATbXAFS7-7" value="SIEM/Аудит&lt;div&gt;(лог транзакций)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="315" y="810" width="170" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,52 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+' Персонажи
+Person(patient, "Пациент", "Получает и управляет медицинскими услугами")
+Person(receptionist, "Ресепшен", "Специалист регистратуры")
+Person(doctor, "Медицинский специалист", "Врач, видит свои приёмы и пациентов")
+Person(cashier, "Кассир", "Вносит платежи")
+Person(accountant, "Бухгалтер", "Обрабатывает платежные операции/отчёты")
+Person(security, "Администратор безопасности", "Контролирует аудит и инциденты")
+
+System_Ext(lab, "Внешняя лаборатория", "Партнёр по анализам")
+System_Ext(finance_sys, "Внешняя бухгалтерия/1С", "Интеграция финансовых отчётов")
+
+' Контейнеры
+Container(web_portal, "Личный кабинет пациента", "Web/Mobile App", "Запись, просмотр и управление собственными медицинскими данными. Только свой доступ (PHI/PII), HTTPS, OAuth2")
+Container(recept_portal, "Портал ресепшена", "Web App", "Регистрация, запись, доступ к основным карточкам пациентов (без PHI), контрольные уведомления, RBAC")
+Container(api_gw, "API Gateway", "Spring Boot REST", "Маршрутизация, ауди­тирование, авторизация (JWT, RBAC/ABAC), журналирование обращений. Privacy Firewall.")
+Container(crm, "CRM/EMR сервер\n(хранилище пациентов)", "PostgreSQL + Backend", "Все записи о пациентах, PHI (диагнозы, заключения), PII (персональные, контакты). Шифрование на уровне хранения и полей. Данные размечены тегами, доступны только по ролям. Все операции логируются. Retention-policy и удаление по заявке пациента.")
+Container(finance, "Модуль платежей", "DB+Backend", "Работа только с токенизированными данными и маскированием (FIN), отделенное хранение платёжных идентификаторов. Транзакции аудируются, доступны только кассирам и бухгалтерам.")
+Container(lab_int, "API интеграции с лабораториями", "REST API", "Передаёт анализы, может получать PHI только для конкретного ID, все обращения audit.")
+Container(bi_ml, "BI/ML/AI-платформа", "Python/DB", "Только обезличенные данные, никакой PII/PHI в явном виде, выгрузки проходят через слой маскирования.")
+Container(backup, "Хранилище бэкапов/архив", "Encrypted Storage", "Все данные централизованно архивируются, шифруются и уничтожаются по сроку хранения (например, 1 год для PHI, 5 лет для бухгалтерии).")
+Container(ad, "Active Directory/IAM", "LDAP/AzureAD", "Ролевой доступ, аутентификация сотрудников, Single Sign-On")
+Container(siem, "SIEM/Мониторинг", "ELK/Prometheus", "Все журналы обращений хранятся отдельно, алерты по нетипичному доступу/утечкам/превышениям ролей.")
+
+' Пользователи и взаимодействие
+Rel(patient, web_portal, "Вводит, получает свои данные", "TLS (HTTPS), OAuth2")
+Rel(web_portal, api_gw, "REST/JWT, TLS")
+Rel(recept_portal, api_gw, "REST/JWT, TLS")
+Rel(receptionist, recept_portal, "Рабочее место для записей")
+Rel(doctor, api_gw, "Видит свои приёмы, пациентов, PHI\n(TLS, RBAC)")
+Rel(api_gw, crm, "CRUD PII/PHI, JDBC+TLS\nРолевой доступ, тегирование, логирование, шифрование")
+Rel(api_gw, finance, "CRUD / прос­мо­тр зло­платежей (FIN), JDBC+TLS, RBAC")
+Rel(api_gw, lab_int, "REST, только по токену пациента, TLS, PHI Audit")
+Rel(lab_int, lab, "Передача анализов\nREST, Audit, TLS")
+Rel(crm, bi_ml, "Выгрузка только анонимизированных данных\n(Masking API, ETL Jobs)")
+Rel(finance, finance_sys, "Автоматическая выгрузка отчётов без персональных данных, только по ролям\nAPI, TLS")
+Rel(finance, cashier, "Вводит чеки")
+Rel(finance, accountant, "Смотрит отчёты, только маскированные данные")
+Rel(crm, backup, "Encrypted Archive\nRetention policy (1 год PHI, 5 лет FIN)")
+Rel(finance, backup, "Encrypted Archive")
+Rel_Back(siem, api_gw, "Получает ALARM, LOGS, MONITOR, аудит")
+Rel(siem, security, "Инциденты, мониторинг")
+Rel(api_gw, ad, "AuthZ, AuthN, RBAC, SSO")
+
+' Примечания (Data Privacy/Retention/Protection)
+' Можно вынести пояснения прямо на C4-диаграмме в теге note
+
+' Краткие тезисы по хранению, удалению, защите
+' (Можно переписать в note right of crm, если поддерживается сервисом)
+@enduml

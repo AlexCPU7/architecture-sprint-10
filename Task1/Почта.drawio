@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="27.1.3">
+  <diagram name="Страница — 1" id="qDFPQ28QTEMssNtvqUvF">
+    <mxGraphModel dx="2305" dy="1160" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3z_jKbvR4VSefVFeOQbn-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3z_jKbvR4VSefVFeOQbn-1" target="3z_jKbvR4VSefVFeOQbn-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3z_jKbvR4VSefVFeOQbn-1" value="Сотрудник" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="560" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3z_jKbvR4VSefVFeOQbn-2" value="Архив истории" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="790" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3z_jKbvR4VSefVFeOQbn-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3z_jKbvR4VSefVFeOQbn-4" target="3z_jKbvR4VSefVFeOQbn-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3z_jKbvR4VSefVFeOQbn-4" value="Отправка через e-mail&lt;div&gt;(S/MIME/TLS, DLP, plugin)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="630" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3z_jKbvR4VSefVFeOQbn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3z_jKbvR4VSefVFeOQbn-5" target="3z_jKbvR4VSefVFeOQbn-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3z_jKbvR4VSefVFeOQbn-5" value="Почтовый сервер&lt;div&gt;(архивация, аудит пересылки)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="710" width="200" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
