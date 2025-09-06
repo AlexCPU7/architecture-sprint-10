@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="27.1.1">
+  <diagram name="Страница — 1" id="Xh214vMTasK0Zd4i50EE">
+    <mxGraphModel dx="1018" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="euyw5k9I1ZDb6qOl312L-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="euyw5k9I1ZDb6qOl312L-1" target="euyw5k9I1ZDb6qOl312L-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="euyw5k9I1ZDb6qOl312L-4" value="заполняет данные,&lt;br&gt;приносит анализы" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="euyw5k9I1ZDb6qOl312L-3">
+          <mxGeometry x="0.0154" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="euyw5k9I1ZDb6qOl312L-1" value="Пациент" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="euyw5k9I1ZDb6qOl312L-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="euyw5k9I1ZDb6qOl312L-2" target="euyw5k9I1ZDb6qOl312L-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="euyw5k9I1ZDb6qOl312L-13" value="Excel форма/журнал &lt;br&gt;регистрации, сканы" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="euyw5k9I1ZDb6qOl312L-8">
+          <mxGeometry x="-0.0267" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="euyw5k9I1ZDb6qOl312L-2" value="Ресепшен" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="euyw5k9I1ZDb6qOl312L-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="euyw5k9I1ZDb6qOl312L-5" target="euyw5k9I1ZDb6qOl312L-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="euyw5k9I1ZDb6qOl312L-12" value="при необходимости,&lt;br&gt;сканы по почте" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="euyw5k9I1ZDb6qOl312L-9">
+          <mxGeometry x="-0.3486" y="-1" relative="1" as="geometry">
+            <mxPoint x="24" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="euyw5k9I1ZDb6qOl312L-5" value="Файловый сервер" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="180" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="euyw5k9I1ZDb6qOl312L-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="euyw5k9I1ZDb6qOl312L-6" target="euyw5k9I1ZDb6qOl312L-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="euyw5k9I1ZDb6qOl312L-11" value="вердикт по анализам,&lt;br&gt;направление" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="euyw5k9I1ZDb6qOl312L-10">
+          <mxGeometry x="0.0364" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="euyw5k9I1ZDb6qOl312L-6" value="Медицинские специалисты" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="euyw5k9I1ZDb6qOl312L-7" value="Excel-журнал/Обновление карты" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="180" width="130" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
